@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { useParams } from "react-router";
 
 function Product() {
@@ -17,6 +16,7 @@ function Product() {
     
     useEffect(() =>{
         getProduct()
+        // eslint-disable-next-line
     }, [])
 
     const loading = () => {
