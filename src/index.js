@@ -14,10 +14,10 @@ root.render(
       <Routes>
         <Route path='/' element={<App />} >
           <Route index element={<Home />} />
-        </Route>
         <Route path='/new' element={<New />} />
         <Route path='/product' element={<Product />} >
           <Route path=':id' element={<Product />} />
+        </Route>
         </Route>
       </Routes>
     </Router>

@@ -1,10 +1,11 @@
 import React from "react";
 import { Outlet } from "react-router";
+import Nav from "./components/Nav";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Nav />
       <Outlet />
     </div>
   );
