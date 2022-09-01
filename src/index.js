@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router';
 import Home from './pages/Home';
 import New from './pages/New';
 import Product from './pages/Product';
+import Update from './pages/Update';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -17,6 +18,9 @@ root.render(
         <Route path='/new' element={<New />} />
         <Route path='/product' element={<Product />} >
           <Route path=':id' element={<Product />} />
+        </Route>
+        <Route path='/update' element={<Update />}>
+          <Route path=':id' element={<Update />} />
         </Route>
         </Route>
       </Routes>
