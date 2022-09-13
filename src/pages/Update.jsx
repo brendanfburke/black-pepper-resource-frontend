@@ -40,6 +40,7 @@ function Update() {
 
     useEffect(() => {
         getProducts()
+        // eslint-disable-next-line
     }, [])
 
     const createProduct = async (product) => {
