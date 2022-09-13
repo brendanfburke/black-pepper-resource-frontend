@@ -42,14 +42,15 @@ function New() {
     };
 
     return (
-        <section>
-        <form onSubmit={handleSubmit}>
+        <section className="form-section">
+        <form className="form-container" onSubmit={handleSubmit}>
             <input
                 type="text"
                 value={newForm.brand}
                 name="brand"
                 placeholder="Brand"
                 onChange={handleChange}
+                className="form-component"
             />
             <input
                 type="text"
@@ -57,6 +58,7 @@ function New() {
                 name="name"
                 placeholder="Product name..."
                 onChange={handleChange}
+                className="form-component"
             />
             <input
                 type="text"
@@ -64,8 +66,9 @@ function New() {
                 name="description"
                 placeholder="Product description"
                 onChange={handleChange}
+                className="form-description"
             />
-            <input type="submit" value="Create Listing" />
+            <input className="form-button" type="submit" value="Create Listing" />
         </form>
     </section>
     )
