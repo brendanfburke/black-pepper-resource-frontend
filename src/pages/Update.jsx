@@ -64,14 +64,15 @@ function Update() {
     const loaded = () => {
         console.log(products)
         return (
-            <section>
-            <form onSubmit={handleSubmit}>
+            <section className="form-section">
+            <form className="form-container" onSubmit={handleSubmit}>
                 <input
                     type="text"
                     value={newForm.brand}
                     name="brand"
                     placeholder='Brand'
                     onChange={handleChange}
+                    className='form-component'
                 />
                 <input
                     type="text"
@@ -79,6 +80,7 @@ function Update() {
                     name="name"
                     placeholder="Name"
                     onChange={handleChange}
+                    className='form-component'
                 />
                 <input
                     type="text"
@@ -86,8 +88,9 @@ function Update() {
                     name="description"
                     placeholder="Product description"
                     onChange={handleChange}
+                    className='form-description'
                 />
-                <input type="submit" value="Update Listing" />
+                <input className="form-button" type="submit" value="Update Listing" />
             </form>
         </section>
         )

@@ -58,8 +58,8 @@ function Product() {
                     <h3 className="product-name">{product.name}</h3>
                     <p className="product-description">{product.description}</p>
                 </div>
-                <button onClick={deleteProduct}>Delete Product</button>
-                <button onClick={updateProduct}>Update Product</button>
+                <button className="product-button" onClick={deleteProduct}>Delete Product</button>
+                <button className="product-button" onClick={updateProduct}>Update Product</button>
             </div>
         )
     }

@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
 
@@ -31,7 +32,9 @@ function Home() {
                 {products.map((product, idx) => {
                     return (
                         <div key={idx}  className="product-box">
-                            <h2 className="product-brand">{product.brand}</h2>
+                            <Link className="product-link" to={`/product/${product._id}`}>
+                                <h2 className="product-brand">{product.brand}</h2>
+                            </Link>
                             <h3 className="product-name">{product.name}</h3>
                         </div>
                     )
