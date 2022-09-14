@@ -28,7 +28,9 @@ function Home() {
 
 
         return (
-            <div className="products-container">
+            <div className="content-wrap">
+                <p className="about-section">This site was created by Brendan Burke as a resource for anyone suffering from a Black Peppercorn allergy. The following list of products have been verified to exclude Black Pepper from the ingredients list. Please feel free to contribute any products that you know to be pepper free!</p>
+                <div className="products-container">
                 {products.map((product, idx) => {
                     return (
                         <div key={idx}  className="product-box">
@@ -39,7 +41,9 @@ function Home() {
                         </div>
                     )
                 })}
+                </div>
             </div>
+            
         )
     }
 

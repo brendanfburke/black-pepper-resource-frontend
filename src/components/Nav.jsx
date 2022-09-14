@@ -8,7 +8,7 @@ function Nav() {
     return (
         <div className="nav-container">
             <Link to='/' className='nav-link'><FontAwesomeIcon className="home-icon" icon={faHome}  /></Link>
-            <p className="nav-title">Black Pepper Resource Site</p>
+            <p className="nav-title">Black Pepper Allergy Resource Site</p>
             <Link to='/new' className='nav-link'><FontAwesomeIcon className="plus-icon" icon={faPlus}  /></Link>
         </div>
     )

@@ -55,6 +55,11 @@ body {
   justify-content: center;
 }
 
+.about-section {
+  text-align: center;
+  font-size: 80%;
+}
+
 .products-container {
   display: flex;
   flex-direction: column;
